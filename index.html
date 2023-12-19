@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- icons -->
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- swipper css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <link rel="icon" href="img/Logo.png">
+    <title>ABE</title>
+</head>
+<body>
+    <!-- HEADER  -->
+    <header class="header" id ="header">
+        <!-- nav  -->
+      <nav class="nav container ">
+             <!-- nav logo -->
+        <a href="#" class="nav-logo">
+            <h2>Abe</h2>
+        </a>
+
+        <!-- nav-menu -->
+        <div class="nav-menu" id="nav-menu">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class= "nav-link " >Contact</a>
+                </li>
+            </ul>
+            <!-- nav close  -->
+            <div class="nav-close" id="nav-close">
+                <i class="lni lni-close">
+                     
+                </i>
+            </div>
+        </div>
+
+        <!-- nav btn  -->
+              <div class="nav-btns">
+        
+                  <!-- toggle btn  -->
+                  <div class="nav-toggle" id="nav-toggle">
+                    <i class="lni lni-grid-alt"></i>
+                  </div>
+                   
+                </div>
+      </nav>
+    </header>
+
+    <main class="main-content">
+
+        <!-- home -->
+        <section class="home section" id="home">
+            <div class="container">
+                <!-- intro  -->
+                <div class="row">
+                    <!-- info  -->
+                    <div class="home-content ">
+                            <div class="name"><b>Abdellah EL MHAMDI EL ALAOUI</b></div>
+                            <span class="info-text"> Software Engineer</span>
+                            <div>
+                                <a href="#contact" class="btn btn-default">Let's Connect    <i class="fas fa-users"></i></a>
+                            </div>
+
+                            <!-- scroll-down mouse wheel  -->
+                            <div class="scroll-down">
+                                <a href="#" class="mouse-wrapper">
+                                    <span>Scroll Down</span>
+                                    <span class="mouse">
+                                        <span class="wheel"></span>
+                                    </span>
+                                </a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about  -->
+        <section class="about section" id="about">
+            <div class="container">
+                <!-- section title  -->
+                   <h2 class="section-title padd-ab">About Me</h2>
+                   <div class="row">
+                      <div class="about-img padd-ab">
+                        <!-- avatar -->
+                        <img src="img/profilepic.png" alt="aboutimg">
+                     </div>
+                     <div class="about-content padd-ab">
+                        <div class="rounded">
+                            <div class="row">
+                                <div class="about-text">
+                                   <!-- about text  -->
+                                   <p>Hi there! I'm Abdellah EL MHAMDI EL ALAOUI, 
+                                    A tech enthusiast experienced in AI, VR, and website development. 
+                                    I hold a degree in Computer Science, specializing in AI and VR. 
+                                    My practical skills stem from freelance web projects and hands-on experience in an R&D lab environment. 
+                                    I've explored VR and Embedded Systems, enhancing my tech knowledge. 
+                                    I excel in applying AI to real-world solutions and crafting immersive experiences. 
+                                    Beyond coding, I'm an avid reader, outdoor enthusiast, and food lover, driving my innovative problem-solving. 
+                                    <br>Let's collaborate and innovate in the tech world!
+                                    </p>
+                                         
+                                 </div>
+                                 <div class="skills padd-15">
+                                    <!-- skill item  -->
+                                    <div class="skill-item">
+                                    <h4> Data Engineering</h4>
+                                    <div class="progress">
+                                        <div class="progress-in" style="width: 80% ;"></div>
+                                        <div class="skill-percent">80%</div>
+                                    </div>
+                                    </div>
+                                    <!-- skill item  -->
+                                    <div class="skill-item">
+                                        <h4>Web & app development </h4>
+                                        <div class="progress">
+                                            <div class="progress-in" style="width: 65% ;" ></div>
+                                            <div class="skill-percent">65%</div>
+                                        </div>
+                                    </div>
+                                    <!-- skill item  -->
+                                    <div class="skill-item">
+                                        <h4>DevOps</h4>
+                                        <div class="progress">
+                                        <div class="progress-in" style="width: 50%;"></div>
+                                        <div class="skill-percent">50%</div>
+                                        </div>
+                                    </div>
+                                    <!-- social icons -->
+                                    <ul class="social-icons">
+
+                                        <li><a href="https://www.linkedin.com/in/abdellah2el" target="_blank"><i class="fab fa-github"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/in/abdellah2el" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                                        <li><a href="file://wsl.localhost/Ubuntu-22.04/home/abe/projects/Portfolio/index.html" target="_blank"><i class="fas fa-globe"></i></a></li>
+                                        <li>    <a href="#" class="tooltip" onclick="showTooltip(event, 'tooltip1')">
+                                            <i class="far fa-envelope"></i>
+                                            <span id="tooltip1" class="tooltiptext" style="display: none;">abdeelalaoui@gmail.com</span>
+                                          </a>
+                                        </li>
+                                    </ul>
+
+                                        <!-- <div class="cv-btn">
+                                            <a href="#" class="btn btn-default">Download CV</a>
+                                        </div> -->
+                                </div>
+                             
+                            </div>
+                        </div>
+                     </div>
+                    </div>
+
+            </div>
+         </div>   
+        </div>
+        </section>
+
+
+        <!-- experiemce -->
+        <section class="section" id="experience">
+            <div class="container">
+                <!-- section title  -->
+                <h2 class="section-title padd-15">Experience</h2>
+                <div class="row">
+                    <!-- education -->
+                  <div class="education padd-15">
+                    <div class="row">
+                        <div class="timeline-box">
+                            <div class="timeline">
+                                 <!-- timeline item -->
+                                 <div class="timeline-item">
+                                    <i class="lni lni-graduation timeline-icon"></i>
+                                    <h3 class="timeline-date">2022-2023
+                                        <i class="lni lni-calendar"></i>
+                                    </h3>
+                                    <h3 class="timeline-title">Master's degree at Evry University</h3>
+                                    <p class="timeline-text">Intelligent Systems and Virtual Reality</p>
+                                 </div>
+                               
+                                  <!-- timeline item -->
+                                 <div class="timeline-item">
+                                    <i class="lni lni-graduation timeline-icon"></i>
+                                    <h3 class="timeline-date">2017 - 2021
+                                        <i class="lni lni-calendar"></i>
+                                    </h3>
+                                    <h3 class="timeline-title">Engineer's degree at ENSA-Tanger</h3>
+                                    <p class="timeline-text">Electronic Systems and Automation Engineering</p>
+                                 </div>
+                                 
+                                 <!-- timeline item -->
+                                 <div class="timeline-item">
+                                    <i class="lni lni-graduation timeline-icon"></i>
+                                    <h3 class="timeline-date">2015-2017
+                                        <i class="lni lni-calendar"></i>
+                                    </h3>
+                                    <h3 class="timeline-title">Preparatory Classes for Grandes Écoles</h3>
+                                    <p class="timeline-text">Engineering Technologies and Sciences</p>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                  
+                   <!-- experience  -->
+                   <div class="experience padd-15">
+                        <div class="row">
+                            <div class="timeline-box">
+                                <div class="timeline">
+                                    <!-- timeline item -->
+                                    <div class="timeline-item">
+                                    <i class="lni lni-briefcase timeline-icon"></i>
+                                    <h3 class="timeline-date">April 2023 - september 2023
+                                        <i class="lni lni-calendar"></i>
+                                    </h3>
+                                    <h3 class="timeline-title">Internship at Telecom SudParis</h3>
+                                    <p class="timeline-text">Conducted an end-of-studies internship focused on enhancing image detection
+                                         and classification by researching high-performing models, exploring activation map generation algorithms, 
+                                         and optimizing classifiers for accuracy using IMAGENET and medical databases.</p>
+                                    </div>
+                                
+                                    <!-- timeline item -->
+                                    <div class="timeline-item">
+                                    <i class="lni lni-briefcase timeline-icon"></i>
+                                    <h3 class="timeline-date"> may 2020 -  aout 2021
+                                        <i class="lni lni-calendar"></i>
+                                    </h3>
+                                    <h3 class="timeline-title">E-commerce Developer & Marketing Specialist</h3>
+                                    <p class="timeline-text">Independently designed and developed e-commerce websites 
+                                        while spearheading diverse marketing campaigns across multiple channels, 
+                                        meticulously optimizing for exceptional acquisition results.
+                                    </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--SERVICES-->
+        <section class="services section" id="services">
+            <div class="container">
+                <!-- section title  -->
+                <h2 class="section-title padd-15">Skills</h2>
+                <div class="row">
+                    <!-- service item -->
+                   <div class="service-item padd-15">
+                       <div class="service-item-inner">
+                           <img src="./img/Code.png" alt="webd">
+                           <h3> Programming Languages <br> & Frameworks</h3>
+                           <ul>
+                            <li> Python, C++, JavaScript (JS)</li>
+                            <li> Django, AngularJS, Node.js</li>
+                            <li> TensorFlow</li>
+                            </ul>  
+                        </div>
+                   </div>
+
+                   <!-- service item -->
+                   <div class="service-item padd-15">
+                    <div class="service-item-inner">
+                        <img src="./img/web_icon.png" alt="skill2">
+                        <h3> Web Technologies <br>& Data Formats</h3>
+                        <ul>
+                            <li> HTML, CSS</li>
+                            <li> JSON, XML, YAML</li>
+                        </ul>  
+                     </div>
+                 </div>
+
+                 <!-- service item -->
+                 <div class="service-item padd-15">
+                    <div class="service-item-inner">
+                        <img src="./img/tools_icon.png" alt="skill3">
+                        <h3>Database Management & DevOps</h3>
+                        <ul>
+                            <li>SQL, NoSQL</li>
+                            <li>Docker, Git, GitHub</li>
+                            <li>Shell, Bash, Linux, AWS</li>
+                        </ul>        
+                     </div>
+                 </div>
+
+                </div>
+                  <div class="text padd-15">
+                      <p>Seeking a dedicated team player for your team?
+                        <a href="#contact"> Click here </a>to connect and let's explore the possibilities together
+                        to contact me! 👋🏽</p>
+                  </div>
+            </div>
+        </section>
+        <!-- Portfolio  -->
+
+          <section class="portfolio section" id="portfolio">
+              <div class="container">
+                  <!-- section title  -->
+                  <h2 class="section-title padd-15"Portfolio></h2>
+                  <div class="row">
+                       <div class="portfolio-filter padd-15">
+                           <div class="portfolio-filter-inner">
+                               <button type="button" class="active" data-filter ="all">Everything</button>
+                               <button type="button"  data-filter ="art">Art</button>
+                               <button type="button"  data-filter ="creative">Creative</button>
+                               
+                           </div>
+                       </div>
+                  </div>
+                  <div class="row portfolio-items">
+                      <!-- portfolio item     -->
+                      <div class="portfolio-item padd-15" data-category="art"> 
+                          <div class="portfolio-item-inner">
+                              <div class="portfolio-item-thumbnail">
+                                  <img src="./img/p1.jpg" alt="">
+                                  <div class="mask"></div>
+                              </div>
+                              <span class="term">Art , Design</span>
+                              <h3 class="portfolio-item-title">Project 1 <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, maiores?</b></h3>
+                              <span class="more-button">&hellip;</span>                         
+                            </div>
+                      </div>
+
+                      <!-- portfolio item     -->
+                      <div class="portfolio-item padd-15" data-category="design">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="./img/p2.jpg" alt="">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">Creative</span>
+                            <h3 class="portfolio-item-title">Project 2 <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, nemo.</h3>
+                            <span class="more-button">&hellip;</span>                         
+                          </div>
+                    </div>
+
+                    <!-- portfolio item     -->
+                    <div class="portfolio-item padd-15" data-category="art">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="./img/p3.jpg" alt="">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">Art</span>
+                            <h3 class="portfolio-item-title">Project 3 <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, beatae?</h3>
+                            <span class="more-button">&hellip;</span>                         
+                          </div>
+                    </div>
+                    <!-- portfolio item     -->
+                    <div class="portfolio-item padd-15" data-category="design">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="./img/p4.jpg" alt="">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">Design</span>
+                            <h3 class="portfolio-item-title">Project 4 <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, quasi.</h3>
+                            <span class="more-button">&hellip;</span>                         
+                          </div>
+                    </div>
+                    
+                     <!-- portfolio item     -->
+                     <div class="portfolio-item padd-15" data-category="creative">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="./img/p5.jpg" alt="">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">Creative</span>
+                            <h3 class="portfolio-item-title">Project 5 <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, nam?</h3>
+                            <span class="more-button">&hellip;</span>                         
+                          </div>
+                    </div>
+
+                     <!-- portfolio item     -->
+                     <div class="portfolio-item padd-15" data-category="art">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="./img/p6.jpg" alt="">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">Art , Design</span>
+                            <h3 class="portfolio-item-title">Project 6 <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, cupiditate.</h3>
+                            <span class="more-button">&hellip;</span>                         
+                          </div>
+                    </div>
+                  </div>
+              </div>
+          </section>
+
+           <!-- contact me  -->
+             <section class="contact section" id="contact">
+                   <div class= "container">
+                       <!-- section title  -->
+                         <h2 class="section-title padd-15">Contact Me</h2>
+                         <div class="row">
+                             <!-- contact box  -->
+                             <div class="contact-box padd-15">
+                                 <div class="contact-data">
+                                     <!-- contact information  -->
+                                     <div class="contact-information">
+                                         <h3 class="contact-subtitle">
+                                            Call Details  
+                                         </h3>
+                                         <span class="contact-description">
+                                             <i class="lni lni-phone contact-icon"></i>
+                                              : (+33) 605.73.34.46
+                                         </span>
+                                     </div>
+
+                                      <!-- contact information  -->
+                                      <div class="contact-information">
+                                        <h3 class="contact-subtitle">
+                                           Write me by mail 
+                                        </h3>
+                                        <span class="contact-description">
+                                            <i class="lni lni-user contact-icon"></i>
+                                             :   abdeelalaoui@gmail.com
+                                        </span>
+                                    </div>
+                                 </div>
+                             </div>
+
+                             <!-- contact form  -->
+                             <form action="" class="contact-form padd-15">
+                                 <div class="contact-inputs">
+                                     <!-- contact content  -->
+                                     <div class="contact-content">
+                                         <input type="email" class="contact-input">
+                                         <label for="" class="contact-label">Email</label>
+                                         <span></span>
+                                     </div>
+
+                                      <!-- contact content  -->
+                                      <div class="contact-content">
+                                        <input type="text" class="contact-input">
+                                        <label for="" class="contact-label">Subject</label>
+                                        <span></span>
+                                    </div>
+
+                                     <!-- contact content  -->
+                                     <div class="contact-content  contact-area">
+                                        <textarea name="" id="" cols="30" rows="10" class="contact-input"></textarea>
+                                        <label for="" class="contact-label">Message</label>
+                                        <span></span>
+                                    </div>
+                                 </div>
+                                 <a href="#" class="btn btn-default">Send Message</a>
+                             </form>
+                              
+                         </div>
+                   </div>
+             </section>
+
+             <!-- footer  -->
+             <footer >
+                 <p class="footer-text">
+                    Copyright &copy; ABE🤩
+                 </p>
+             </footer>
+           
+
+    </main>
+    
+      <!-- JS -->
+<script src="main.js"></script>    
+    
+</body>
+</html>
