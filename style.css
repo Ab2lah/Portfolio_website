@@ -381,8 +381,8 @@ color: var(--color-dark);
     display: flex ;
     /* flex-grow:1 ; */
     justify-content: center;
-    height: 98vh;
-    min-height: 98vh;
+    /* height: 98vh; */
+    min-height: 88vh;
     /* padding: 5rem; */
     height: 500px; /* Adjust as needed */
 
@@ -406,7 +406,7 @@ color: var(--color-dark);
     text-align: center;
 }
 
-.about  .social-icons
+.social-icons
 {
     text-align: center;
     display: flex;
@@ -416,12 +416,12 @@ color: var(--color-dark);
 }
 
 
-.about .social-icons li:not(:last-child)
+.social-icons li:not(:last-child)
 {
     margin-right: var(--m-1-5) ;
 }
 
-.about  .social-icons a
+ .social-icons a
 {
     
     color: var(--color-dark);
@@ -519,7 +519,7 @@ color: var(--color-dark);
     object-fit: cover;
     border: 2px groove var(--color-dark);
 }
-.about .social-icons img{
+.social-icons img{
     border: none;
 }
 .about-content{
@@ -620,7 +620,7 @@ color: var(--color-dark);
 
 .service-item,
 .service-item-inner img{
-    padding-top: 5px;
+    padding-top: 16px;
     height: 25%;
 }
 
@@ -644,7 +644,7 @@ max-width: 33.33%;
   text-align: center;
   transform: translateY(0);
   transition: 0.3s;
-  height: 260px;
+  height: 240px;
   background-color: var(--color-light);
   color: var(--color-dark);
 }
@@ -1061,7 +1061,7 @@ max-height: 100%;
     border: 2px hidden var(--color-light);
     background-color: var(--color-dark);
     font-size:1.3rem;
-    margin-top: 15rem;
+    margin-top: 3rem;
     margin-bottom: 0;
     text-align: center;
     font-weight: var(--font-semi-bold);
