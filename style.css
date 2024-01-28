@@ -5,10 +5,10 @@
 
     /* colors */
 
-    --color-light: #DFF6FF;
-    --color-primary: #47B5FF;
+    --color-light: #E6F7FF ;
+    --color-primary: #fff;
     --color-gray: #1363DF;
-    --color-dark: #06283D;
+    --color-dark: #000000  ;
 
     /* font and topography */
      /* .5rem = 8px | 1rem =16px */
@@ -36,16 +36,10 @@
      --m-2-5: 2.5rem;
 
      /* card padding */
-      
      --card-padding: 2rem 1rem;
-       
 
        /* Border radius */
-
-       --border-radius: 3rem;
-
-       /* box shadow
-         --box-shadow: 0px 5px 20px 0px rgba(255, 255, 255, 0.1); */
+       --border-radius: 1.5rem;
 
 }
 /* responsive typography */
@@ -107,8 +101,8 @@ body{
  }
 
 img{
-    max-width: 100%;
-    height: auto;
+    /* max-width: 100%; */
+    /* height: auto; */
     vertical-align: middle;
 }
 
@@ -122,7 +116,10 @@ a
     text-decoration: none;
     color: var(--color-light);
 }
-
+.text a {
+    color: var(--color-gray);
+    text-decoration: underline;
+}
 h1,h2,h3
 {
   font-weight: var(--font-semi-bold);
@@ -165,7 +162,7 @@ h3
 /* reusable css classes */
 .section .container{
     padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-bottom: 1rem;
     
 }
 
@@ -196,7 +193,7 @@ margin-top: 30px; /* Adds space at the top of the last div containing the button
     margin-bottom: var(--m-1);
 }
 .section-title{
-    color: var(--color-dark);
+    color: var(--color-gray);
     font-size: 2.25rem;
     margin-left: var(--m-0-75);
     margin-bottom: var(--m-2-5);
@@ -205,7 +202,7 @@ margin-top: 30px; /* Adds space at the top of the last div containing the button
 .padd-15{
     /* padding-top: 35px; */
     padding-left: 25px;
-    padding-right: 25px;
+    padding-right: 20px;
 
 }
 .padd-ab{
@@ -392,27 +389,19 @@ color: var(--color-dark);
     /* Adjust background properties */
     background-size: cover; /* Adjust the image size to cover the entire section */
     background-position: center; /* Position the image at the center */
+    text-align: center;
   
 }
 
-.info {
-    /* Your styles for the other content */
-    flex: 1; /* Allow the content to take remaining space */
-}
-
-.home 
-{
-   
-    text-align: center;
-}
 
 .social-icons
 {
     text-align: center;
     display: flex;
-    margin: var(--m-1);
-    padding-top: var(--m-2);
+    margin: var(--m-0-5);
+    padding-top: var(--m-0-5);
     justify-content: center;
+    content: '';
 }
 
 
@@ -424,7 +413,7 @@ color: var(--color-dark);
  .social-icons a
 {
     
-    color: var(--color-dark);
+    color: var(--color-gray);
     font-size: var(--h1-font-size);
 }
 
@@ -502,9 +491,8 @@ color: var(--color-dark);
 }
 
 .about-img img{
-    border: 3px solid var(--color-dark);
-    width: 350px; /* Adjust the width as needed */
-    height: 380px; /* Adjust the height as needed */
+    width: 310px; /* Adjust the width as needed */
+    height: 340px; /* Adjust the height as needed */
     object-fit: cover; /* Maintains image aspect ratio */
     object-position: center 15%; /* Adjust the position to show the desired part */
     margin-right: 25px; /*  Add space between the image and content */
@@ -517,7 +505,7 @@ color: var(--color-dark);
 .about img{
     border-radius:50%;
     object-fit: cover;
-    border: 2px groove var(--color-dark);
+    border: 3px groove var(--color-gray);
 }
 .social-icons img{
     border: none;
@@ -539,7 +527,9 @@ color: var(--color-dark);
    
    background-color : var(--color-light);
    border: 0.1rem groove var(--color-gray);
-   padding:1rem 4rem;
+   padding-left: 20px;
+   padding-right: 20px;
+   padding-top: 10px;
    border-radius: var(--border-radius);
 }
 
@@ -572,7 +562,7 @@ color: var(--color-dark);
 
 .about-content .skills .skill-item:not(last-child)
 {
-    margin-bottom: var(--m-1-5);
+    margin-bottom: var(--m-0-5);
 }
 
 .about-content .skills .skill-item .progress .progress-in
@@ -609,44 +599,47 @@ color: var(--color-dark);
     color: var(--color-dark);
 }
 
-/* skills */
 
 .service-item-inner:hover{
-    
-    /* border: .225rem  groove rgb(218, 238, 145); */
-    box-shadow: inset 5px 3px 1px 1px var(--color-dark);
+        box-shadow: inset 5px 3px 1px 1px var(--color-dark);
     transition: 0.3s;
 }
 
 .service-item,
 .service-item-inner img{
-    padding-top: 16px;
-    height: 25%;
+    width: 25%;
 }
 
 .services .service-item {
-flex :0 0 33.33% ;
-max-width: 33.33%;
-/* display: flex; */
+    flex :0 0 33.33% ;
+    width: 33.33%;
 }
 
 .services ul li::before {
     content: '\2022'; /* Unicode character for bullet point (•) */
     display:inline; /* Ensures proper display of the bullet point */
     width: 15px; /* Adjust width for proper alignment */
-    /* margin-left: 5px; Negative margin to position the bullet point */
         }
-          
+
 .services .service-item .service-item-inner
 {
   border-radius: var(--border-radius);
-  padding: auto;
   text-align: center;
   transform: translateY(0);
   transition: 0.3s;
   height: 240px;
   background-color: var(--color-light);
   color: var(--color-dark);
+  border: 0.1rem groove var(--color-gray);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensure each item takes the full height */
+  align-items: center; /* Center horizontally */
+}
+.services .service-item .service-item-inner p {
+  text-align: justify;
+
 }
 
 .services .service-item .service-item-inner:hover
@@ -654,9 +647,13 @@ max-width: 33.33%;
   /* z-index: 10; */
     transform: translateY(-0.625rem);
     transform: scale(1.09);
+    box-shadow: inset 5px 3px 1px 1px var(--color-gray);
     
 }
-
+.service-item-inner a{
+    text-decoration: underline;
+    color: var(--color-gray);
+}
 .service-item h3{
     margin-bottom: var(--m-0-5);
     font-size:medium;
@@ -668,11 +665,6 @@ text-align: center;
 margin-top: var(--m-2-5);
 }
 
-.text a
-{
-
-color: var(--color-light);
-}
 
 /* expereince */
 
@@ -706,7 +698,7 @@ color: var(--color-light);
     border-radius: var(--border-radius);
     width: 92%;
     height: 95%;
-    border: 0.1rem groove var(--color-dark);
+    border: 0.1rem groove var(--color-gray);
     position: relative;
 }
 
@@ -753,7 +745,7 @@ color: #06283D();
 }
 .timeline .timeline-date .lni
 {
-    color: #06283D;
+    color: var(--color-gray);
     margin-right: 0.3rem;
 }
 
@@ -763,65 +755,7 @@ color: #06283D();
     margin: var(--m-0-5) 0;
 
 }
-/* portfolio */
 
-.portfolio .portfolio-filter
-{
-    flex:0  0 100%;
-    max-width: 100%;
-    text-align: center;
-    margin-bottom: var(--m-2-5);
-}
-
-.portfolio .portfolio-filter button
-{
-    border: none;
-    background-color: transparent;
-    font-weight: var(--font-semi-bold);
-    text-transform: capitalize;
-    margin: 1rem var(--m-0-75);
-    cursor: pointer;
-    white-space: nowrap;
-    transition: 0.3s;
-    color: var(--color-light);
-
-}
-
-.portfolio .portfolio-filter button.active
-{
-color: var(--color-light);
-position: relative;
-
-}
-
-.portfolio .portfolio-filter button.active::before
-{
-    content: '' ;
-    position: absolute;
-    width: 65% ;
-    height: .15rem;
-    left: 0%;
-    bottom: -0.25rem;
-    background-color: var(--color-primary);
-    border-radius: 50%;
-}
-
-.portfolio-item
-{
-    flex:0 0 33.33%;
-    max-width: 33.33%;
-    margin-bottom: var(--m-2-5);
-}
-
-.portfolio-item.hide
-{
-    display: none;
-}
-.portfolio-item.show
-{
-    display: block;
-    animation: showItem 0.5s ease;
-}
 @keyframes showitem {
     0%
     {
@@ -835,102 +769,8 @@ position: relative;
     }
 }
 
-.portfolio-item-inner
-{
-    position: relative;
-    overflow: hidden;   
-    padding-bottom: 0;  
-
-}
-
-.portfolio-item-thumbnail
-{
-   height: 100%;
-   width: 100%;
-}
-
-.portfolio-item-inner .portfolio-item-thumbnail img
-{
-    width:100%;
-    height:25em;
-    object-fit: cover;
-    border: 2px groove rgb(141, 175, 189);
-}
-
-.portfolio-item .mask
-{
-    background: rgba(99, 196, 175, 0.747);
-    position: absolute;
-   
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: 0.3s;
-}
 
 
-
-.portfolio-item-inner:hover .mask
-{
-  opacity: 0.8 ;
-}
-
-.portfolio-item .term
-{
-    color: var(--color-dark);
-    background: var(--color-gray);
-    border-bottom-left-radius: 0.98rem;
-    border-bottom-right-radius: 0.98rem;
-    position: absolute;
-    top: 0;
-    left: var(--m-1-5);
-    font-size: var(--small-font-size);
-    display: inline-block;
-    padding: 0.19rem 0.625rem;
-    transform: translateY(-40px);
-    transition: 0.3s;
-}
-
-.portfolio-item h3
-{
-    color: var(--color-dark);
-    font-size: 1.25rem;
-    margin:  0 0 0.98rem;
-    padding: 0 1.25rem;
-    position: absolute;
-    top: 3.75rem;
-    transform: translateY(30px);
-    opacity: 0;
-}
-
-.portfolio-item .more-button
-{
-    color: var(--color-dark);
-    position: absolute;
-    bottom: var(--m-1);
-    left: var(--m-0-5);
-    font-size: 1.6rem;
-    display: block;
-    background: var(--color-gray);
-    height: 2.5rem;
-    width: 2.5rem;
-    cursor: pointer;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 28px;
-    transition:0.3s;
-    opacity:0;
-  
-}
-
-.portfolio-item-inner:hover h3 ,
-.portfolio-item-inner:hover span
-{
-    opacity: 1;
-    transform: translateY(0);
-}
 
 /* contact me  */
 
@@ -1059,7 +899,7 @@ max-height: 100%;
 
 .footer-text {
     border: 2px hidden var(--color-light);
-    background-color: var(--color-dark);
+    background-color: var(--color-gray);
     font-size:1.3rem;
     margin-top: 3rem;
     margin-bottom: 0;
@@ -1068,8 +908,9 @@ max-height: 100%;
     color: var(--color-light);
     }
    
-.footer-text:hover { color: var(--color-dark);
-background-color: var(--color-light);
+.footer-text:hover { 
+    color: var(--color-gray);
+    background-color: var(--color-light);
 }
  @media only screen and (max-width:986px)
  {
@@ -1093,10 +934,6 @@ background-color: var(--color-light);
         margin-bottom: var(--m-2-5);
     }
 
-    .portfolio-item.best
-    {
-        padding: var(--card-padding)  ;
-    }
  }
 
  @media only screen and (max-width: 840px){
@@ -1192,13 +1029,11 @@ background-color: var(--color-light);
            
      }
      
-     .fact-item,
-     .portfolio-item
-     {
+     .fact-item     {
          flex: 0 0 50%;
          max-width: 50%;
-        
      }
+
      .about-content .about-text
      {
          margin-bottom: var(--m-1-5) ;
@@ -1263,15 +1098,6 @@ background-color: var(--color-light);
         max-width: 100%;
         
    }
-     .portfolio-item,
-     .portfolio-item-inner,
-     .portfolio-item-inner h3
-     {
-
-         flex: 0 0 100%;
-         max-width: 100%;
-     }
-
  }
 
  @media only screen and (max-width: 510px)
